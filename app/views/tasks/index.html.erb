@@ -5,6 +5,8 @@
   <button>Add new task</button>
 </form>
 
+<% if session["user_id"] != nil%>
+
 <table>
   <% for task in @tasks %>
     <tr>
